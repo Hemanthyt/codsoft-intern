@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./stylee.css">
+
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <div class="container">
+        <input type="text" id="inp">
+        <div class="calci">
+        <input type="button" value="clr" onclick="document.getElementById('inp').value = ''">
+        <input type="button" value="x" onclick="document.getElementById('inp').value += 'x'">
+        <input type="button" value="%" onclick="document.getElementById('inp').value += '%'">
+        <input type="button" value="/" onclick="document.getElementById('inp').value += '/'">
+        <input type="button" value="7" onclick="document.getElementById('inp').value += '7'">
+        <input type="button" value="8" onclick="document.getElementById('inp').value += '8'">
+        <input type="button" value="9" onclick="document.getElementById('inp').value += '9'">
+        <input type="button" value="*" onclick="document.getElementById('inp').value += '*'">
+        <input type="button" value="4" onclick="document.getElementById('inp').value += '4'">
+        <input type="button" value="5" onclick="document.getElementById('inp').value += '5'">
+        <input type="button" value="6" onclick="document.getElementById('inp').value += '6'">
+        <input type="button" value="-" onclick="document.getElementById('inp').value += '-'">
+        <input type="button" value="1" onclick="document.getElementById('inp').value += '1'">
+        <input type="button" value="2" onclick="document.getElementById('inp').value += '2'">
+        <input type="button" value="3" onclick="document.getElementById('inp').value += '3'">
+        <input type="button" value="+" onclick="document.getElementById('inp').value += '+'">
+        <input type="button" value="." onclick="document.getElementById('inp').value += '.'">
+        <input type="button" value="0" onclick="document.getElementById('inp').value += '0'">
+        <input type="button" class="equal" value="=" onclick="document.getElementById('inp').value = eval(inp.value)">
+        
+        </div>
+    </div>
+    <footer class="footer">
+            <p>&copy; 2024 Hemanth Kumar S J. All rights reserved.</p>  
+    </footer>
+</body>
+</html>
